@@ -1,3 +1,25 @@
 <h1>
-  {{title}}
+  {{title}}  
 </h1>
+
+<h3> Entry for Single Property </h3>
+<input type="text" [(ngModel)]="person.name">
+
+<h3> Entry for Object Property </h3>
+<input type="text" [(ngModel)]="account.id">
+
+<hr>
+
+<app-test 
+  [name]="person.name"
+  [account]="account"
+  *ngIf="someProperty"
+>
+  <h4 #contentEl>Content passed</h4>  
+</app-test>
+
+<hr>
+
+<button (click)="onToggleTest();">Click me!</button>
+
+<button (click)="manualUpdate()">Manual account update</button>
