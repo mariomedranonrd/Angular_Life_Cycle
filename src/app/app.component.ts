@@ -13,7 +13,7 @@ export class AppComponent {
   };
   account: Object = {
     id: 123456,
-    name: 'Some Name'
+    name: 'Mario Too'
   };
 
   onToggleTest() {
